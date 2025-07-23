@@ -3,7 +3,13 @@
 [![Tests](https://github.com/liberu-genealogy/php-gedcom/actions/workflows/run-tests.yml/badge.svg)](https://github.com/liberu-genealogy/php-gedcom/actions/workflows/run-tests.yml)
 
 
+## Fork of php-gedcom
 
+This fork fixes method signature inconsistencies by adding `: mixed` return types to all `parse()` methods in classes that extend `\Gedcom\Parser\Component`.
+
+In the original package, the abstract `Component` class defines a return type, but its child classes do not.
+
+Original repository: https://github.com/liberu-genealogy/php-gedcom
 
 ## Requirements
 

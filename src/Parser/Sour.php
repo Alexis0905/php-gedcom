@@ -23,7 +23,7 @@ class Sour extends \Gedcom\Parser\Component
  * associated with sources.
  */
 {
-    public static function parse(\Gedcom\Parser $parser)
+    public static function parse(\Gedcom\Parser $parser): mixed
     {
         $record = $parser->getCurrentLineRecord();
         $depth = (int) $record[0];

@@ -30,7 +30,7 @@ class Fam extends \Gedcom\Parser\Component
         'MARS',
     ];
 
-    public static function parse(\Gedcom\Parser $parser)
+    public static function parse(\Gedcom\Parser $parser): mixed
     {
         $record = $parser->getCurrentLineRecord();
         $depth = (int) $record[0];

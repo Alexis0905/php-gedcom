@@ -17,7 +17,7 @@ namespace Gedcom\Parser\Sour;
 
 class Repo extends \Gedcom\Parser\Component
 {
-    public static function parse(\Gedcom\Parser $parser)
+    public static function parse(\Gedcom\Parser $parser): mixed
     {
         $repo = new \Gedcom\Record\Sour\Repo();
         $record = $parser->getCurrentLineRecord();

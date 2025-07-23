@@ -17,7 +17,7 @@ namespace Gedcom\Parser\Sour\Repo;
 
 class Caln extends \Gedcom\Parser\Component
 {
-    public static function parse(\Gedcom\Parser $parser)
+    public static function parse(\Gedcom\Parser $parser): mixed
     {
         $caln = new \Gedcom\Record\Sour\Repo\Caln();
         $record = $parser->getCurrentLineRecord();

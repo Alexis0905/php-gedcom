@@ -17,7 +17,7 @@ namespace Gedcom\Parser\ObjeRef;
 
 class File extends \Gedcom\Parser\Component
 {
-    public static function parse(\Gedcom\Parser $parser)
+    public static function parse(\Gedcom\Parser $parser): mixed
     {
         $file = new \Gedcom\Record\ObjeRef\File();
         $record = $parser->getCurrentLineRecord();
