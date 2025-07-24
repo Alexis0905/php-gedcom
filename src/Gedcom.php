@@ -15,6 +15,8 @@
 
 namespace Gedcom;
 
+use Gedcom\Record\Indi;
+
 /**
  * Class Gedcom.
  */
@@ -253,5 +255,14 @@ class Gedcom
     public function getObje()
     {
         return $this->obje;
+    }
+
+    /**
+     * @param $id
+     * @return Indi|null
+     */
+    public function findIndiById($id): Indi|null
+    {
+        return $this->indi[$id] ?? null;
     }
 }
